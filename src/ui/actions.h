@@ -7,7 +7,9 @@
 extern "C" {
 #endif
 
-extern void action_on_rotate(lv_event_t * e);
+extern void action_on_top_light(lv_event_t * e);
+extern void action_on_boot_light(lv_event_t * e);
+extern void action_on_side_light(lv_event_t * e);
 
 
 #ifdef __cplusplus

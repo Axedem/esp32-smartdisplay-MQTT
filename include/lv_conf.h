@@ -47,7 +47,7 @@
 
 #if LV_USE_STDLIB_MALLOC == LV_STDLIB_BUILTIN
     /*Size of the memory available for `lv_malloc()` in bytes (>= 2kB)*/
-    #define LV_MEM_SIZE (64 * 1024U)          /*[bytes]*/
+    #define LV_MEM_SIZE (16 * 1024U)          /*[bytes]*/
 
     /*Size of the memory expand for `lv_malloc()` in bytes*/
     #define LV_MEM_POOL_EXPAND_SIZE 0
@@ -379,7 +379,7 @@
 #define LV_ATTRIBUTE_EXTERN_DATA
 
 /* Use `float` as `lv_value_precise_t` */
-#define LV_USE_FLOAT            0
+#define LV_USE_FLOAT            1
 
 /*==================
  *   FONT USAGE
@@ -390,9 +390,9 @@
 #define LV_FONT_MONTSERRAT_8  0
 #define LV_FONT_MONTSERRAT_10 0
 #define LV_FONT_MONTSERRAT_12 0
-#define LV_FONT_MONTSERRAT_14 1
+#define LV_FONT_MONTSERRAT_14 0
 #define LV_FONT_MONTSERRAT_16 0
-#define LV_FONT_MONTSERRAT_18 0
+#define LV_FONT_MONTSERRAT_18 1
 #define LV_FONT_MONTSERRAT_20 0
 #define LV_FONT_MONTSERRAT_22 0
 #define LV_FONT_MONTSERRAT_22 0
@@ -425,7 +425,7 @@
 #define LV_FONT_CUSTOM_DECLARE
 
 /*Always set a default font*/
-#define LV_FONT_DEFAULT &lv_font_montserrat_14
+#define LV_FONT_DEFAULT &lv_font_montserrat_18
 
 /*Enable handling large font and/or fonts with a lot of characters.
  *The limit depends on the font size, font face and bpp.
@@ -499,7 +499,7 @@
 
 #define LV_USE_BUTTONMATRIX  1
 
-#define LV_USE_CALENDAR   1
+#define LV_USE_CALENDAR   0
 #if LV_USE_CALENDAR
     #define LV_CALENDAR_WEEK_STARTS_MONDAY 0
     #if LV_CALENDAR_WEEK_STARTS_MONDAY
@@ -691,7 +691,7 @@
 #define LV_USE_RLE 0
 
 /*QR code library*/
-#define LV_USE_QRCODE 1
+#define LV_USE_QRCODE 0
 
 /*Barcode code library*/
 #define LV_USE_BARCODE 0

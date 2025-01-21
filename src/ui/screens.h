@@ -9,18 +9,16 @@ extern "C" {
 
 typedef struct _objects_t {
     lv_obj_t *main;
-    lv_obj_t *button_add;
-    lv_obj_t *rotate;
     lv_obj_t *obj0;
-    lv_obj_t *milliseconds;
-    lv_obj_t *light;
-    lv_obj_t *count;
-    lv_obj_t *milliseconds_value;
-    lv_obj_t *cdr_value;
-    lv_obj_t *count_value;
-    lv_obj_t *grad_r;
-    lv_obj_t *grad_g;
-    lv_obj_t *grad_b;
+    lv_obj_t *obj1;
+    lv_obj_t *obj2;
+    lv_obj_t *obj3;
+    lv_obj_t *temperature;
+    lv_obj_t *voltage_gen;
+    lv_obj_t *voltage_bat;
+    lv_obj_t *amper_charge;
+    lv_obj_t *amper_consume;
+    lv_obj_t *wifi_ip;
 } objects_t;
 
 extern objects_t objects;
