@@ -8,11 +8,11 @@
 #include <ui/screens.h>
 #include <ui/actions.h>
 
-const char *ssid = "IoC";
-const char *password = "56965696";
+const char *ssid = "****";
+const char *password = "****";
 
 // MQTT настройки
-const char *mqtt_server = "192.168.1.1"; // IP-адрес или домен вашего MQTT-брокера
+const char *mqtt_server = "192.168.1.50"; // IP-адрес или домен вашего MQTT-брокера
 const char *mqtt_topic = "ioc/tele/BatteryControl/SENSOR";
 
 // MQTT клиент
